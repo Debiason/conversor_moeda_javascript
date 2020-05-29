@@ -1,0 +1,52 @@
+body {
+  display: flex;
+  background-color: rgb(152, 161, 138);
+}
+
+main {
+  display: flex;
+  margin: 35px auto auto auto;
+box-shadow: rgb(68, 62, 62) 5px 5px;
+padding: 25px;
+}
+
+#conversor {
+  padding: 15px;
+  width: 425px;
+}
+
+.pesquisa {
+     grid-area: pesquisa; 
+     align-items: center;
+display: flex;
+box-shadow: rgb(68, 62, 62) 5px 5px;
+margin-left: 55px;
+}
+.pais { grid-area: pais; }
+.moeda { grid-area: moeda; }
+
+.conteudo {
+    width: 255px;
+  display: grid;
+  grid:
+  'pesquisa pesquisa pesquisa pesquisa pesquisa pesquisa'
+  'pais pais pais pais moeda moeda'
+  'pais pais pais pais moeda moeda';
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+input.input,select{
+    background-color: rgb(216, 204, 204);
+}
+
+input.button{
+    padding: 1px;
+width: 85px;
+background-color: rgb(216, 204, 204);
+color:rgb(68, 62, 62) 5px 5px;
+}
+
+input.button:hover{
+    cursor: pointer;
+}
