@@ -9,8 +9,7 @@
 </head>
 
 <body>
-
-
+    <h1>Conversor de moeda</h1>
     <main>
         <div class="conteudo">
             <div class="pesquisa">
@@ -21,7 +20,8 @@
                 </form>
             </div>
             <div class="pais">
-                <h3>País</h3>
+                <h3 id="titulo-pais">País</h3>
+                <div id="bandeira"></div>
                 <div id="listagem"></div>
             </div>
             <div class="moeda">
@@ -33,7 +33,7 @@
         <div id="conversor">
             <h2 id="titulo"></h2>
             <input class="input" id="moedaA_valor" type="number" value=""></input>
-            <input class="button" type="button" value="Converter" onclick="converter()"></input>
+            <input class="button" id="button" type="button" value="Converter" onclick="converter()"></input>
             <h2 id="cotacao"></h2>
             <h4 id="valor"></h4>
         </div>
@@ -94,6 +94,7 @@
 
                 var elemento = "";
                 var elemento2 = "";
+                var elemento3 = "";
                 var nomeMoeda = "";
 
 
@@ -102,6 +103,7 @@
                     if (nome === valor.siglaMoeda) {
 
                         elemento += '<li>' + valor.pais + '</li>';
+                        elemento3 += '<img src="' + valor.bandeira + '">';
 
                         nomeMoeda = valor.nomeMoeda;
                     }
@@ -112,6 +114,7 @@
 
                 $('#listagem').html(elemento);
                 $('#listagem2').html(elemento2);
+                $('#bandeira').html(elemento3);
 
 
             })
