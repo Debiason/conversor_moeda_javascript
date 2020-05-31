@@ -27,7 +27,7 @@ main {
 #listagem {
   grid-area: listagem;
   left: 15px;
-position: relative;
+  position: relative;
 }
 #bandeira {
   grid-area: bandeira;
@@ -78,16 +78,18 @@ input#button:hover {
   cursor: pointer;
 }
 
-img {
+.img-resp {
   width: 15px;
   border-radius: 50%;
+  transition: 1s;
 }
 
-img:hover{
+.img-resp:hover {
   width: 45px;
   border-radius: 0%;
   position: relative;
-  right: 35px;
+  float: right;
+  cursor: pointer;
 }
 
 #listagem2 {
