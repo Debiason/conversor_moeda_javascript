@@ -100,3 +100,10 @@ h1 {
   position: relative;
   left: 35%;
 }
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 1px;
+  text-overflow: '';
+}

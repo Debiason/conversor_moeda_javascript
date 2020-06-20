@@ -1,4 +1,6 @@
 
+     
+
         //variaveis
         var moedaA_valor = "";
         var moedaB_valor = 0;
@@ -61,7 +63,7 @@
                     if (nome === valor.siglaMoeda) {
 
                         elemento += '<li>' + valor.pais + '</li>';
-                        elemento3 += '<img class="img-resp" src="' + valor.bandeira + '">';
+                        elemento3 += '<img class="img-resp" onclick="myMove()" id="imagem" src="' + valor.bandeira + '" title="'+ valor.pais +'">';
 
                         nomeMoeda = valor.nomeMoeda;
                     }
