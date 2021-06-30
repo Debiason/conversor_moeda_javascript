@@ -1,6 +1,21 @@
+
+html {
+    background-image: url('../image/background-2.png');
+    background-repeat: no-repeat;
+    background-size:100%;
+    bottom: 0;
+    color: black;
+    left: 0;
+    overflow: auto;
+    padding: 3em;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
 body {
   display: flex;
-  background-color: rgb(152, 161, 138);
+  
 }
 
 main {
@@ -20,7 +35,7 @@ main {
 .pesquisa {
   grid-area: pesquisa;
   align-items: center;
-  display: flex;
+  display: grid;
   box-shadow: rgb(68, 62, 62) 5px 5px;
   margin-left: 55px;
 }
@@ -28,6 +43,7 @@ main {
   grid-area: listagem;
   left: 15px;
   position: relative;
+  text-align: justify;
 }
 #bandeira {
   grid-area: bandeira;
@@ -85,11 +101,14 @@ input#button:hover {
 }
 
 .img-resp:hover {
-  width: 45px;
+  width: 65px;
   border-radius: 0%;
   position: relative;
   float: right;
   cursor: pointer;
+  z-index: 1000;
+  border: 1px solid rgb(209, 206, 206);
+  box-shadow: 2px 2px 50px #333;
 }
 
 #listagem2 {
@@ -107,3 +126,4 @@ select {
   text-indent: 1px;
   text-overflow: '';
 }
+
